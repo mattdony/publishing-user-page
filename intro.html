@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>강원대학교 데이터 라이브러리</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo"><a href="./main.html"><img src="./assets/images/logo.svg" alt="강원대학교 데이터 라이브러리 로고 이미지"></a></h1>
+                <nav class="gnb">
+                    <ul class="gnb-list">
+                        <li><a href="./intro.html">데이터 라이브러리 소개</a></li>
+                        <li><a href="./guide.html">이용안내</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./notice.html">공지사항</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-mo-menu"><span class="blind">메뉴 버튼</span></button>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <main class="container">
+            <div class="sub-visual intro-visual">
+                <div class="inner">
+                    <h2 class="sub-title">강원대학교<br>데이터 라이브러리</h2>
+                    <p class="sub-desc">데이터 라이브러리를 소개합니다.</p>
+                </div>
+            </div>
+            <div class="sub-content">
+                <div class="inner">
+                    <div class="intro-content bottom-line">
+                        <h3 class="sub-ct-title">데이터 라이브러리는?</h3>
+                        <div class="intro-box">
+                            <div class="txt-area">
+                                <p class="desc">
+                                    생성형 AI의 발전에 따라 전문가에서 일반인까지 다양한 분야에서 AI가 광범위하게 활용 가능해지고 그 유용성과 가능성이 무궁무진하게 확대되고 있습니다.
+                                    <br><br>
+                                    데이터 라이브러리는 이러한 생성형 AI를 쉽고 자유롭게 접할 수 있도록 마련한 체험형 공간으로, 생성형 AI를 활용한 여러 컨텐츠 체험을 통해 생성형 AI에 대한 이해를 돕고 독창적인 활용 방안을 모색할 수 있는 플레이그라운드가 되고자 합니다.
+                                    <br><br>
+                                    강원대학교는 데이터 라이브러리 운영을 통해 강원지역의 다양한 AI 활용 컨텐츠 개발을 도모하고 지역사회 문제에 대한 창의적 아이디어를 모색할 수 있도록 지원할 것이며, 데이터 라이브러리의 작은 체험으로부터 시작된 AI에 대한 관심과 이해가 학생들의 AI 및 데이터 분야의 연구 활성화 및 인재 양성의 발판이 되었으면 합니다.
+                                </p>
+                                <ul class="info-list">
+                                    <li class="location">위치<span>강원대학교 춘천캠퍼스 도서관 4층</span></li>
+                                    <li class="time">운영시간<span>월-금 09:00~18:00 공휴일휴무</span></li>
+                                    <li class="fee">이용료<span>무료</span></li>
+                                    <li class="inquiry">문의<span>abc@defg.com</span></li>
+                                </ul>
+                            </div>
+                            <figure>
+                                <img src="./assets/images/img_intro_01.jpg" alt="데이터 라이브러리 소개 이미지">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="intro-content">
+                        <h3 class="sub-ct-title">체험 전 생성형 AI의 기술에 대해 알아보세요.</h3>
+                        <div class="intro-box">
+                            <figure>
+                                <img src="./assets/images/img_intro_02.png" alt="생성형 AI의 기반, LLM(Large Language Model) 이미지">
+                            </figure>
+                            <div class="txt-area">
+                                <h4 class="intro-tit">생성형 AI의 기반, LLM(Large Language Model)</h4>
+                                <ul class="dot-list">
+                                    <li>대규모 언어 모델(LLM)은 방대한 데이터를 기반으로 다양한 자연어 처리(NLP) 작업을 수행할 수 있는 딥 러닝 알고리즘입니다.</li>
+                                    <li>대규모 언어 모델은 일반적으로 트랜스포머 아케텍처를 사용하며 수천억 개의 파라미터로 엄청난 양의 데이터 세트를 자체 학습하여 적은 입력 프롬프트로 놀라운 예측 결과를 냅니다.</li>
+                                    <li>방대한 언어 데이터 세트를 유연하게 검색, 생성, 분석, 딥변할 수 있는 LLM은 다양하게 활용될 수 있습니다. 점차 인간과 흡사하면서도 더 높은 성능으로 질문의 답변을 생성하는 ChatGPT와 같은 LLM 유형이 각광받으면서 생성형 AI에 대한 연구 및 개발은 더욱 활성화되고 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="intro-box">
+                            <div class="txt-area">
+                                <h4 class="intro-tit">RAG(Retrieval Augmented Generation)</h4>
+                                <ul class="dot-list">
+                                    <li>RAG는 검색과 생성을 결합한 모델로, 대답을 생성하는 것이 아니라 검색하여 특정 문서나 지식 베이스에서 정보를 가져온 후 생성합니다.</li>
+                                    <li>특정 목적이나 사용자와 관련된 데이터베이스를 구축하고, 이를 활용한 검색을 통해 가져온 생성모델과 결합하여 단기간에 효율적으로 맞춤 답변이 가능합니다.</li>
+                                    <li>RAG 모델은 신뢰할 수 있는 정보를 참조하도록 하여 LLM의 단점인 허위 답변 가능성을 보완할 수 있는 프로세스입니다.</li>
+                                </ul>
+                            </div>
+                            <figure>
+                                <img src="./assets/images/img_intro_03.png" alt="RAG(Retrieval Augmented Generation) 이미지">
+                            </figure>
+                        </div>
+                        <div class="intro-box">
+                            <figure>
+                                <img src="./assets/images/img_intro_04.png" alt="Fine-tuning 이미지">
+                            </figure>
+                            <div class="txt-area">
+                                <h4 class="intro-tit">Fine-tuning</h4>
+                                <ul class="dot-list">
+                                    <li>파인튜닝은 특정 도메인에 대한 정보의 정확도를 높이기 위해 이미 훈련된 대규모 언어 모델이 특정 데이터셋을 추가 학습하는 것을 말합니다.</li>
+                                    <li>특정 분야에 특화된 서비스를 개발하는 경우, 새로운 데이터로 LLM을 파인튜닝하여 고유한 목적에 최적화된 AI 모델을 적용한 애플리케이션을 구축할 수 있습니다.</li>
+                                    <li>파인튜닝 데이터는 양보다는 질이 중요하고 목표 작업에 따라 필요한 데이터의 양은 달라질 수 있습니다. 파인튜닝을 통한 이러한 훈련을 통해 LLM은 더욱 초개인화된 답변 제공이 가능할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-content">
+                        <div class="image-area">
+                            <p class="txt">데이터 라이브러리에서 제공하는 생성형AI 체험 컨텐츠는<br><span>NAVER</span>의 HyperCLOVA X를 기반으로 합니다.</figcaption>
+                        </div>
+                        <div class="txt-area">
+                            <dl>
+                                <dt>글로벌 Top3 경쟁력을 갖춘 초대규모 AI</dt>
+                                <dd>네이버의 HyperCLOVA X는 국내 최대, 세계 Top3 수준의 하이퍼스케일 AI입니다. HyperCLLOVA X는 LLM의 한계를 보완하여 더욱 놀라운 성능과 향상된 품질을 제공하며, AI 백본 모델, 데이터, 튜닝 기술, 슈퍼 컴퓨팅 인프라 모든 것에 대한 노하우로 만들어집니다. 이를 바탕으로 다양한 니즈에 맞는 다양한 AI 프로덕트로 AI 생태계를 확장시키고 있습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>한국어를 가장 잘 이해하는 AI</dt>
+                                <dd>언어 모델은 주로 학습된 언어의 영향을 크게 받습니다. HyperCLOVA X는 한국 문화의 맥락을 가장 잘 이해하는 AI로, 한국어 기준 비용 및 시간 관점에서 높은 효율성을 갖고 있습니다. 네이버만이 확보할 수 있는 양질의 한국어 데이터를 학습하여 실제 한국어 능력 시험에서도 더욱 높은 성능을 나타내 가장 자연스러운 한국어로 답변하는 것이 가능합니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용자향 커스텀이 가능한 AI</dt>
+                                <dd>읽기, 쓰기, 코딩하기, 검색, 요약, 상담, 추천, 기획 등 HyperCLOVA X는 사용자가 원하는 다양한 영역에서 강력한 백본이 되어 생산성을 향상시키고, 자체 데이터셋을 활용하여 목적에 최적화된 모델을 구축할 수 있습니다. 또한 뛰어난 외부 연결성 및 확장성으로 사용자의 상상력을 AI와 결합하고 무한한 가능성으로 발전시킬 수 있도록 돕습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>더 강력해진 AI도구 CLOVA Studio</dt>
+                                <dd>CLOVA Studio는 자체 보유한 데이터를 HyperCLOVA X 언어모델(LLM)과 결합하여 전문 엔지니어의 도움 없이도 원하는 AI 모델을 만들 수 있는 하이퍼스케일 개발 도구입니다.
+                                    데이터 라이브러리에서는 AI기반 특화 서비스를 개발 및 연구중인 연구자를 위해 기업용 유료 서비스인 CLOVA Studio를 체험할 수 있도록 지원하고 있습니다.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="./guide.html" class="btn-line blue lg">무엇을 체험을 할 수 있나요?<br class="mo"> 이용 안내 보러가기</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo_footer.svg" class="web" alt="데이터 라이브러리 강원대학교 x NAVER 로고 이미지">
+                    <img src="./assets/images/logo_footer_mo.svg" class="mo" alt="데이터 라이브러리 강원대학교 x NAVER 로고 이미지">
+                </div>
+                <div class="address-area">
+                    <span class="name">데이터 라이브러리</span>
+                    <address>
+                        강원특별자치도 춘천시 강원대학길1 강원대학교 춘천캠퍼스 도서관 4층 | Tel. 033-250-8022
+                    </address>
+                    <p class="copyright">Copyrightⓒ 2024 KANGWON NATIONAL UNIVERSITY DATA LIBRARY. All rights reserved.</p>
+                </div>
+                <div class="column">
+                    <div class="sns-group">
+                        <a href="#"><img src="./assets/images/ico_sns_facebook.svg" alt="페이스북 바로가기"></a>
+                        <a href="#"><img src="./assets/images/ico_sns_youtube.svg" alt="유튜브 바로가기"></a>
+                        <a href="#"><img src="./assets/images/ico_sns_blog.svg" alt="블로그 바로가기"></a>
+                        <a href="#"><img src="./assets/images/ico_sns_instagram.svg" alt="인스타그램 바로가기"></a>
+                    </div>
+                    <ul class="link-list">
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>	
+        let table = new DataTable('#userTable', {
+            lengthChange: false,
+            searching: false,
+            ordering: false,
+            info: false,
+            language: {
+                paginate: {
+                    first: '<span class="prev-end"><img src="./assets/images/ico_pagination_arrow_end" /></span>',
+                    previous: '<span class="prev"><img src="./assets/images/ico_pagination_arrow.svg" /></span>',
+                    next: '<span class="next"><img src="./assets/images/ico_pagination_arrow.svg" /></span>',
+                    last: '<span class="next-end"><img src="./assets/images/ico_pagination_arrow_end" /></span>'
+                },
+            }
+        });
+    </script>
+</body>
+</html>
