@@ -5,6 +5,9 @@ br {
     &.mo {
         display: none;
     }
+    &.web {
+        display: block;
+    }
 }
 // input
 .input-group {
@@ -273,6 +276,7 @@ select {
     padding: 0 10px;
     border-radius: 8px;
     text-align: center;
+    box-sizing: border-box;
     font-weight: 700;
     font-size: 20px;
     color: $color-white;
@@ -298,6 +302,7 @@ select {
     min-width: 80px;
     padding: 0 10px;
     border-radius: 8px;
+    box-sizing: border-box;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -427,7 +432,7 @@ table {
                 color: $color-gray-02 !important;
                 border: none !important;
                 &:hover {
-                    color: $color-black !important;
+                    color: $color-white !important;
                     background: none !important;
                 }
                 &:focus {
@@ -601,6 +606,9 @@ table {
     br {
         &.mo {
             display: block;
+        }
+        &.web {
+            display: none;
         }
     }
     .search-form {
